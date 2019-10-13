@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="the-bank-list:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3200d645-e655-40b0-a829-9f5056ca6455" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/the-bank-list.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/the-bank-list/WEB-INF/lib/spring-aop-5.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/the-bank-list/WEB-INF/lib/spring-beans-5.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/the-bank-list/WEB-INF/lib/spring-context-5.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/the-bank-list/WEB-INF/lib/spring-core-5.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/the-bank-list/WEB-INF/lib/spring-expression-5.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/the-bank-list/WEB-INF/lib/spring-jcl-5.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/the-bank-list/WEB-INF/lib/spring-web-5.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/the-bank-list/WEB-INF/lib/spring-webmvc-5.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/the-bank-list/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/the-bank-list/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/the-bank-list/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="F:\programming\Incubator\the-bank-list\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1S9ZJ33zwDg8fvZZtG0Gm7ldHcI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\programming\Incubator\the-bank-list\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="the-bank-list" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.26" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="the-bank-list:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/the_bank_list" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_the-bank-list" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51297" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="the-bank-list:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView />
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3200d645-e655-40b0-a829-9f5056ca6455" name="Default Changelist" comment="" />
+      <created>1570977697009</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570977697009</updated>
+      <workItem from="1570977698777" duration="3519000" />
+      <workItem from="1570981462023" duration="2757000" />
+    </task>
+    <task id="LOCAL-00001" summary="index.jsp">
+      <created>1570982516061</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570982516061</updated>
+    </task>
+    <task id="LOCAL-00002" summary="index.jsp">
+      <created>1570983509739</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570983509739</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="index.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="index.jsp" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#Project_Structure" timestamp="1570978306790">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1570978306790" />
+    <state x="180" y="28" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1570979642283">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="180" y="28" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1570979642283" />
+    <state x="553" y="257" width="334" height="214" key="Github.ShareDialog" timestamp="1570982284703">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="553" y="257" width="334" height="214" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1570982284703" />
+    <state x="447" y="69" key="Github.UntrackedFilesDialog" timestamp="1570982339727">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="447" y="69" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1570982339727" />
+    <state width="1323" height="340" key="GridCell.Tab.0.bottom" timestamp="1570981245089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1570981245089" />
+    <state width="1323" height="340" key="GridCell.Tab.0.center" timestamp="1570981245088">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1570981245088" />
+    <state width="1323" height="340" key="GridCell.Tab.0.left" timestamp="1570981245088">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1570981245088" />
+    <state width="1323" height="340" key="GridCell.Tab.0.right" timestamp="1570981245089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1570981245089" />
+    <state width="1323" height="340" key="GridCell.Tab.1.bottom" timestamp="1570981245089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1570981245089" />
+    <state width="1323" height="340" key="GridCell.Tab.1.center" timestamp="1570981245089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1570981245089" />
+    <state width="1323" height="340" key="GridCell.Tab.1.left" timestamp="1570981245089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1570981245089" />
+    <state width="1323" height="340" key="GridCell.Tab.1.right" timestamp="1570981245089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1570981245089" />
+    <state width="1323" height="340" key="GridCell.Tab.2.bottom" timestamp="1570981245090">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1570981245090" />
+    <state width="1323" height="340" key="GridCell.Tab.2.center" timestamp="1570981245090">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1570981245090" />
+    <state width="1323" height="340" key="GridCell.Tab.2.left" timestamp="1570981245090">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1570981245090" />
+    <state width="1323" height="340" key="GridCell.Tab.2.right" timestamp="1570981245090">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1570981245090" />
+    <state width="1323" height="340" key="GridCell.Tab.3.bottom" timestamp="1570981245091">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1570981245091" />
+    <state width="1323" height="340" key="GridCell.Tab.3.center" timestamp="1570981245091">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1570981245091" />
+    <state width="1323" height="340" key="GridCell.Tab.3.left" timestamp="1570981245091">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1570981245091" />
+    <state width="1323" height="340" key="GridCell.Tab.3.right" timestamp="1570981245091">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="340" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1570981245091" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1570983551823">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1570983551823" />
+  </component>
+</project>
