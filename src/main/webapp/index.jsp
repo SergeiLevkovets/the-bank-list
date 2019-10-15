@@ -1,3 +1,4 @@
+<%@ page import="by.levkovets.banklist.service.impl.ServiceImpl" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,17 +6,20 @@
     <title>The Bank List</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<%
+    ServiceImpl service = new ServiceImpl();
+%>
 <body>
 <h2>The Bank List</h2>
 <br>
 <br>
 <div class="web-field">
-    <input readonly></input><button>richest user</button>
+    <input readonly value="<%=service.getRichestUser()%>"/><button formaction="">richest user</button>
 </div>
 <br>
 <br>
 <div>
-    <input readonly></input><button>sum of all accounts</button>
+    <input readonly value="<%=service.getSumAllAccounts()%>"/><button>sum of all accounts</button>
 </div>
 </body>
 </html>
