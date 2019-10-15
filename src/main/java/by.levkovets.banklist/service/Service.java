@@ -1,11 +1,18 @@
 package by.levkovets.banklist.service;
 
-import by.levkovets.banklist.dao.Dao;
+import by.levkovets.banklist.model.Entity;
 
-public interface Service {
+import java.util.List;
 
-    String getRichestUser();
+public interface Service<T extends Entity> {
+    void save(T obj);
 
-    String getSumAllAccounts();
+    void update(T obj);
+
+    void delete(T obj);
+
+    T findById(Integer id);
+
+    List<T> findAll();
 
 }

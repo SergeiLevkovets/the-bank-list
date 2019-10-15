@@ -1,4 +1,4 @@
-package by.levkovets.banklist.domain;
+package by.levkovets.banklist.model;
 
 public interface Entity {
     int getId();

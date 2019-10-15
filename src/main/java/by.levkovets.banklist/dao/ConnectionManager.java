@@ -1,4 +1,4 @@
-package by.levkovets.banklist.service;
+package by.levkovets.banklist.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

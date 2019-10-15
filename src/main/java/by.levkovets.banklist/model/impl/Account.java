@@ -1,6 +1,6 @@
-package by.levkovets.banklist.domain.impl;
+package by.levkovets.banklist.model.impl;
 
-import by.levkovets.banklist.domain.Entity;
+import by.levkovets.banklist.model.Entity;
 
 import java.util.Objects;
 

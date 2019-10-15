@@ -1,8 +1,8 @@
 package by.levkovets.banklist.dao.impl;
 
 import by.levkovets.banklist.dao.Dao;
-import by.levkovets.banklist.domain.impl.User;
-import by.levkovets.banklist.service.ConnectionManager;
+import by.levkovets.banklist.model.impl.User;
+import by.levkovets.banklist.dao.ConnectionManager;
 
 import java.sql.*;
 import java.util.ArrayList;

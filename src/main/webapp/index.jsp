@@ -1,4 +1,4 @@
-<%@ page import="by.levkovets.banklist.service.impl.ServiceImpl" %>
+<%@ page import="by.levkovets.banklist.service.impl.UserServiceImpl" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <%
-    ServiceImpl service = new ServiceImpl();
+    UserServiceImpl service = new UserServiceImpl();
 %>
 <body>
 <h2>The Bank List</h2>
