@@ -1,10 +1,10 @@
-package by.levkovets.banklist.service.impl;
+package by.levkovets.banklist.service;
 
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class ServiceImplTest {
+public class ServiceTest {
 
     @Test
     public void getRichestUser() {
