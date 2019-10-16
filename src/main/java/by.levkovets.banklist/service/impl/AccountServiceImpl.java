@@ -36,14 +36,6 @@ public class AccountServiceImpl implements Service<Account> {
         return accountDao.findAll();
     }
 
-    public String getSumAllAccounts() {
-        int sumAccount = 0;
-        List<Account> list = findAll();
-        for (Account account : list) {
-            sumAccount += account.getAccount();
-        }
-        return String.valueOf(sumAccount);
-    }
 
     public List<Account> findAllByUserId(User user){
         return accountDao.findAllByUserId(user);

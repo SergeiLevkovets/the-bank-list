@@ -36,10 +36,9 @@ public class UserServiceImpl implements Service<User> {
         return userDao.findAll();
     }
 
-    public String getRichestUser() {
+    public String getRichestUser(List<User> userList) {
         int result = 0;
         User richestUser = null;
-        List<User> userList = findAll();
         for (User user : userList) {
             List<Account> userAccounts = accountService.findAllByUserId(user);
             int sumUserAccount = 0;
@@ -53,6 +52,14 @@ public class UserServiceImpl implements Service<User> {
         }
 
         return richestUser.toString();
+    }
+
+    public String getSumAccounts(List<Account> list) {
+        int sumAccount = 0;
+        for (Account account : list) {
+            sumAccount += account.getAccount();
+        }
+        return String.valueOf(sumAccount);
     }
 
 }
