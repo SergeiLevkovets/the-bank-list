@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +13,7 @@
 <div class="web-field">
     <form action="control.html" method="get">
         <input readonly name="rich"
-               value="${rich}"/>
+               value="<%= request.getAttribute("rich") != null ? request.getAttribute("rich") : " " %>"/>
         <input type="submit" value="richest user">
     </form>
 </div>
@@ -22,7 +22,7 @@
 <div>
     <form action="control.html" method="get">
         <input name="sum" readonly
-               value="${sum}"/>
+               value="<%= request.getAttribute("sum") != null ? request.getAttribute("sum") : " " %>"/>
         <input type="submit" value="sum of all accounts">
     </form>
 </div>
