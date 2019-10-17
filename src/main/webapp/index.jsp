@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h2>The Bank List</h2>
+<h2>The Bank List привет</h2>
 <br>
 <br>
 <div class="web-field">

@@ -83,10 +83,13 @@ public class UserDao implements Dao<User> {
             set = statement.executeQuery();
 
             while (set.next()) {
-                Integer usrId = set.getInt("user_id");                // Вот так получать данные - очень плохо!
+                Integer userId = set.getInt("user_id");                // Вот так получать данные - очень плохо!
                 String name = set.getString("name");    // А вот так - очень хорошо!
                 String sureName = set.getString("sure_Name");
-                user = new User(usrId, name, sureName);
+                user = new User();
+                user.setId(userId);
+                user.setName(name);
+                user.setSureName(sureName);
             }
         } catch (SQLException e) {
             throw new RuntimeException("Some errors occurred during DB access!", e);
@@ -110,10 +113,14 @@ public class UserDao implements Dao<User> {
             set = statement.executeQuery();
 
             while (set.next()) {
-                Integer id = set.getInt("user_id");                // Вот так получать данные - очень плохо!
+                Integer userId = set.getInt("user_id");                // Вот так получать данные - очень плохо!
                 String name = set.getString("name");    // А вот так - очень хорошо!
                 String sureName = set.getString("sure_Name");
-                list.add(new User(id, name, sureName));
+                User user = new User();
+                user.setId(userId);
+                user.setName(name);
+                user.setSureName(sureName);
+                list.add(user);
             }
         } catch (SQLException e) {
             throw new RuntimeException("Some errors occurred during DB access!", e);

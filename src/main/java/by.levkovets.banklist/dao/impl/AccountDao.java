@@ -1,9 +1,9 @@
 package by.levkovets.banklist.dao.impl;
 
+import by.levkovets.banklist.dao.ConnectionManager;
 import by.levkovets.banklist.dao.Dao;
 import by.levkovets.banklist.model.impl.Account;
 import by.levkovets.banklist.model.impl.User;
-import by.levkovets.banklist.dao.ConnectionManager;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -85,9 +85,12 @@ public class AccountDao implements Dao<Account> {
 
             while (set.next()) {
                 int accountId = set.getInt("account_id");
-                int account = set.getInt("account");
+                int accountValue = set.getInt("account");
                 int userId = set.getInt("fk_user_id");
-                obj = new Account(accountId, account, userId);
+                obj = new Account();
+                obj.setId(accountId);
+                obj.setAccount(accountValue);
+                obj.setUserId(userId);
             }
         } catch (SQLException e) {
             throw new RuntimeException("Some errors occurred during DB access!", e);
@@ -112,36 +115,13 @@ public class AccountDao implements Dao<Account> {
 
             while (set.next()) {
                 int accountId = set.getInt("account_id");
-                int account = set.getInt("account");
+                int accountValue = set.getInt("account");
                 int userId = set.getInt("fk_user_id");
-                list.add(new Account(accountId, account, userId));
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException("Some errors occurred during DB access!", e);
-        } finally {
-            ConnectionManager.closeDbResources(connection, statement, set);
-        }
-        return list;
-    }
-
-    public List<Account> findAllByUserId(User user) {
-        List<Account> list = new ArrayList<>();
-        int id = user.getId();
-
-        Connection connection = null;
-        PreparedStatement statement = null;
-        ResultSet set = null;
-
-        try {
-            connection = ConnectionManager.getConnection();
-            statement = connection.prepareStatement("select * from bank_list_db.account where fk_user_id=" + id + "");
-            set = statement.executeQuery();
-
-            while (set.next()) {
-                int accountId = set.getInt("account_id");
-                int account = set.getInt("account");
-                int userId = set.getInt("fk_user_id");
-                list.add(new Account(accountId, account, userId));
+                Account account = new Account();
+                account.setId(accountId);
+                account.setAccount(accountValue);
+                account.setUserId(userId);
+                list.add(account);
             }
         } catch (SQLException e) {
             throw new RuntimeException("Some errors occurred during DB access!", e);

@@ -9,11 +9,7 @@ public class User implements Entity {
     private String name;
     private String sureName;
 
-    public User(int id, String name, String surName) {
-        this.id = id;
-        this.name = name;
-        sureName = surName;
-    }
+    public User() {}
 
     @Override
     public int getId() {

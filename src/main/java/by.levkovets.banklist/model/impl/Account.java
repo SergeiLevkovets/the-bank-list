@@ -9,11 +9,7 @@ public class Account implements Entity {
     private int account;
     private int userId;
 
-    public Account(int id, int account, int userId) {
-        this.id = id;
-        this.account = account;
-        this.userId = userId;
-    }
+    public Account() {}
 
     @Override
     public int getId() {
