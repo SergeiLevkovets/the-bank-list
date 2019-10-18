@@ -12,11 +12,14 @@ import java.util.List;
 
 public class ServiceTest {
 
-    ServiceImpl serviceTest = Mockito.mock(ServiceImpl.class);
+    ServiceImpl service = new ServiceImpl();
+    ServiceImpl serviceSpy = Mockito.spy(service);
+
 
     List<User> userList = new ArrayList<>();
     List<Account> accountList = new ArrayList<>();
     User richUser = EntityCreator.creatNewUser(2, "Sidor", "Sidorov");
+    User errorUser = EntityCreator.creatNewUser(1, "Error", "Errorovich");
 
     {
         userList.add(richUser);
@@ -27,25 +30,27 @@ public class ServiceTest {
         accountList.add(EntityCreator.creatNewAccount(3, 150, 3));
         accountList.add(EntityCreator.creatNewAccount(4, 200, 1));
         accountList.add(EntityCreator.creatNewAccount(5, 250, 2));
-        Mockito.when(serviceTest.getAllUser()).thenReturn(userList);
-        Mockito.when(serviceTest.getAllAccount()).thenReturn(accountList);
-    }
-
-
-    @Test
-    public void getRichestUser() {
-
-        Assert.assertEquals(serviceTest.getRichestUser(), serviceTest.getAllUser());
-
+        Mockito.doReturn(userList).when(serviceSpy).getAllUser();
+        Mockito.doReturn(accountList).when(serviceSpy).getAllAccount();
     }
 
     @Test
+
     public void getSumAllAccounts() {
         Integer actualSum = 0;
         for (Account account : accountList) {
             actualSum += account.getAccount();
         }
+        Integer expected = serviceSpy.getSumAllAccounts();
 
-        Assert.assertEquals(serviceTest.getSumAllAccounts(), actualSum);
+        Assert.assertEquals(expected, actualSum);
     }
+
+    @Test
+    public void getRichestUser() {
+
+        Assert.assertEquals(serviceSpy.getRichestUser(), richUser);
+
+    }
+
 }
