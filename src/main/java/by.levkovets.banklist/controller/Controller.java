@@ -17,13 +17,13 @@ public class Controller extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Service service = new ServiceImpl();
         if (req.getParameter("rich") != null) {
-            String rich = service.getRichestUser();
+            String rich = service.getRichestUser().toString();
             req.setAttribute("rich", rich);
             req.getRequestDispatcher("/index.jsp").forward(req, resp);
         }
 
         if (req.getParameter("sum") != null) {
-            String sum = service.getSumAllAccounts();
+            String sum = service.getSumAllAccounts().toString();
             req.setAttribute("sum", sum);
             req.getRequestDispatcher("/index.jsp").forward(req, resp);
         }

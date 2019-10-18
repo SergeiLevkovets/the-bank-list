@@ -2,8 +2,8 @@ package by.levkovets.banklist.dao.impl;
 
 import by.levkovets.banklist.dao.ConnectionManager;
 import by.levkovets.banklist.dao.Dao;
+import by.levkovets.banklist.model.EntityCreator;
 import by.levkovets.banklist.model.impl.Account;
-import by.levkovets.banklist.model.impl.User;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -76,7 +76,7 @@ public class AccountDao implements Dao<Account> {
         Connection connection = null;
         PreparedStatement statement = null;
         ResultSet set = null;
-        Account obj = null;
+        Account account = null;
 
         try {
             connection = ConnectionManager.getConnection();
@@ -87,17 +87,14 @@ public class AccountDao implements Dao<Account> {
                 int accountId = set.getInt("account_id");
                 int accountValue = set.getInt("account");
                 int userId = set.getInt("fk_user_id");
-                obj = new Account();
-                obj.setId(accountId);
-                obj.setAccount(accountValue);
-                obj.setUserId(userId);
+                account = EntityCreator.creatNewAccount(accountId, accountValue, userId);
             }
         } catch (SQLException e) {
             throw new RuntimeException("Some errors occurred during DB access!", e);
         } finally {
             ConnectionManager.closeDbResources(connection, statement, set);
         }
-        return obj;
+        return account;
     }
 
     @Override
@@ -117,10 +114,7 @@ public class AccountDao implements Dao<Account> {
                 int accountId = set.getInt("account_id");
                 int accountValue = set.getInt("account");
                 int userId = set.getInt("fk_user_id");
-                Account account = new Account();
-                account.setId(accountId);
-                account.setAccount(accountValue);
-                account.setUserId(userId);
+                Account account = EntityCreator.creatNewAccount(accountId, accountValue, userId);
                 list.add(account);
             }
         } catch (SQLException e) {

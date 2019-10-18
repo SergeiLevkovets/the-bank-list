@@ -1,6 +1,7 @@
 package by.levkovets.banklist.dao.impl;
 
 import by.levkovets.banklist.dao.Dao;
+import by.levkovets.banklist.model.EntityCreator;
 import by.levkovets.banklist.model.impl.User;
 import by.levkovets.banklist.dao.ConnectionManager;
 
@@ -86,10 +87,7 @@ public class UserDao implements Dao<User> {
                 Integer userId = set.getInt("user_id");                // Вот так получать данные - очень плохо!
                 String name = set.getString("name");    // А вот так - очень хорошо!
                 String sureName = set.getString("sure_Name");
-                user = new User();
-                user.setId(userId);
-                user.setName(name);
-                user.setSureName(sureName);
+                user = EntityCreator.creatNewUser(userId, name, sureName);
             }
         } catch (SQLException e) {
             throw new RuntimeException("Some errors occurred during DB access!", e);
@@ -116,10 +114,7 @@ public class UserDao implements Dao<User> {
                 Integer userId = set.getInt("user_id");                // Вот так получать данные - очень плохо!
                 String name = set.getString("name");    // А вот так - очень хорошо!
                 String sureName = set.getString("sure_Name");
-                User user = new User();
-                user.setId(userId);
-                user.setName(name);
-                user.setSureName(sureName);
+                User user = EntityCreator.creatNewUser(userId, name, sureName);
                 list.add(user);
             }
         } catch (SQLException e) {

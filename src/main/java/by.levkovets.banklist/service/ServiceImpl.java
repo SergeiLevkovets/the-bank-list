@@ -12,10 +12,18 @@ public class ServiceImpl implements Service {
     private AccountDao accountDao = new AccountDao();
     private UserDao userDao = new UserDao();
 
+    public List<User> getAllUser (){
+        return userDao.findAll();
+    }
+
+    public List<Account> getAllAccount (){
+        return accountDao.findAll();
+    }
+
     private List<Account> getUserAccounts(User user) {
         List<Account> resultList = new ArrayList<>();
         int userId = user.getId();
-        for (Account account : accountDao.findAll()) {
+        for (Account account : getAllAccount()) {
             if (account.getUserId() == userId) {
                 resultList.add(account);
             }
@@ -32,10 +40,10 @@ public class ServiceImpl implements Service {
     }
 
     @Override
-    public String getRichestUser() {
+    public User getRichestUser() {
         int result = 0;
         User richestUser = null;
-        for (User user : userDao.findAll()) {
+        for (User user : getAllUser()) {
             List<Account> userAccounts = getUserAccounts(user);
             int sumUserAccount = getSumAccounts(userAccounts);
             if (sumUserAccount > result) {
@@ -43,13 +51,13 @@ public class ServiceImpl implements Service {
                 richestUser = user;
             }
         }
-        return richestUser.toString();
+        return richestUser;
     }
 
     @Override
-    public String getSumAllAccounts() {
-        int sum = getSumAccounts(accountDao.findAll());
-        return String.valueOf(sum);
+    public Integer getSumAllAccounts() {
+        Integer sum = getSumAccounts(getAllAccount());
+        return sum;
     }
 
 }

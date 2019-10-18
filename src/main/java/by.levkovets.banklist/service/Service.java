@@ -6,7 +6,7 @@ import by.levkovets.banklist.model.impl.User;
 import java.util.List;
 
 public interface Service {
-    String getRichestUser();
+    User getRichestUser();
 
-    String getSumAllAccounts();
+    Integer getSumAllAccounts();
 }
