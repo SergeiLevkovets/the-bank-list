@@ -19,7 +19,6 @@ public class ServiceTest {
     List<User> userList = new ArrayList<>();
     List<Account> accountList = new ArrayList<>();
     User richUser = EntityCreator.creatNewUser(2, "Sidor", "Sidorov");
-    User errorUser = EntityCreator.creatNewUser(1, "Error", "Errorovich");
 
     {
         userList.add(richUser);
@@ -37,10 +36,7 @@ public class ServiceTest {
     @Test
 
     public void getSumAllAccounts() {
-        Integer actualSum = 0;
-        for (Account account : accountList) {
-            actualSum += account.getAccount();
-        }
+        Integer actualSum = 50 + 100 + 150 + 200 + 250;
         Integer expected = serviceSpy.getSumAllAccounts();
 
         Assert.assertEquals(expected, actualSum);
